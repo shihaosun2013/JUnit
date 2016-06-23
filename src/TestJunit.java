@@ -11,4 +11,10 @@ public class TestJunit {
     public void testPrintMessage() {
         assertEquals(message, messageUtil.printMessage());
     }
+
+    @Test
+    // Failed test
+    public void testPrintMessageFailure() {
+        assertEquals("New World", messageUtil.printMessage());
+    }
 }
